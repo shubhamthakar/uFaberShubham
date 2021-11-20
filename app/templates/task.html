@@ -57,6 +57,8 @@
     <button class="stop" onclick="stop()">Stop</button>
     <br /><br />
     <button><a href="{% url 'SignOutView' %}">Logout</a></button>
+    <br /><br />
+    <button><a href="{% url 'getTaskView' %}">See Tasks</a></button>
 
     {{ form.errors }} {% for msg in messages %}
     <p style="color: red">{{msg}}</p>

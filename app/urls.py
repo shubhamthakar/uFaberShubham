@@ -5,7 +5,7 @@ from .views import *
 urlpatterns = [
     path('taskManager/', TaskManagerView.as_view(), name="TaskManagerView"),
     path('displayTask/', getTaskView.as_view(), name="getTaskView"),
-    path('signin/', SignInView.as_view(), name="SignInView"),
+    path('accounts/login/', SignInView.as_view(), name="SignInView"),
     path('register/', RegistrationView.as_view(), name="RegistrationView"),
     path('signout/', SignOutView.as_view(), name="SignOutView"),
 ]   
