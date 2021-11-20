@@ -23,7 +23,8 @@ class TaskManagerView(View):
         taskName = request.POST.get('taskName')
         startTime = request.POST.get('startTime')
         timeTaken = request.POST.get('timeTaken')
-        startTime = datetime.datetime.strptime(startTime,"%H:%M:%S")
+        print(startTime[0:7])
+        startTime = datetime.datetime.strptime(startTime[0:7],"%H:%M:%S")
         #timeTaken = datetime.datetime.strptime(timeTaken,"%H:%M:%S")
         user = request.user
         print(user)
