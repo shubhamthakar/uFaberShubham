@@ -12,7 +12,7 @@ class TaskForm(forms.ModelForm):
         fields = ["projectNo","taskName","startTime","timeTaken"]
         widgets = {
             'timeTaken': forms.TextInput(attrs={'id': 'countdown', 'readonly': 'readonly'}),
-            'startTime':  forms.TextInput(attrs={'readonly': 'readonly'})
+            'startTime':  forms.TextInput(attrs={'id': 'startTime','readonly': 'readonly'})
             }
         
 

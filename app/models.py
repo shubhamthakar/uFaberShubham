@@ -24,7 +24,7 @@ class Task(models.Model):
     user = models.ForeignKey(User, on_delete = models.CASCADE)
     projectNo = models.CharField( max_length=10,choices=PROJECT_CHOICES,default=PROJECT1)
     taskName = models.CharField(unique=True, max_length = 30)
-    startTime = models.TimeField(default=datetime.datetime.now().strftime("%X"), auto_now=False)
+    startTime = models.TimeField(auto_now=False)
     timeTaken = models.CharField(max_length=10)
     endTime = models.TimeField(auto_now=True)
 
